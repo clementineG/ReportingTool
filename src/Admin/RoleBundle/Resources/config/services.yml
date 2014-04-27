@@ -1,0 +1,7 @@
+parameters:
+#    admin_role.example.class: Admin\RoleBundle\Example
+
+services:
+#    admin_role.example:
+#        class: %admin_role.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

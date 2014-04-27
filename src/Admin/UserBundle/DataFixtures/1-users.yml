@@ -1,0 +1,100 @@
+model: Admin\UserBundle\Entity\User
+fixtures:
+    JGH:
+        acronym: JGH
+        firstname: Jean-Gilles
+        lastname: Hoursiangou
+        email: jean-gilles.hoursiangou@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+          - chef_de_projet
+          - exploitant
+          - administrateur
+
+    SC:
+        acronym: SC
+        firstname: Sébastien
+        lastname: Christy
+        email: sebastien.christy@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+          - chef_de_projet
+          - exploitant
+          - administrateur
+
+    LD:
+        acronym: LD
+        firstname: Luc
+        lastname: Dallemane
+        email: luc.dallemane@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    DU:
+        acronym: DU
+        firstname: Damien
+        lastname: Urruty
+        email: damien.urruty@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    MD:
+        acronym: MD
+        firstname: Maxime
+        lastname: Dubois
+        email: maxime.dubois@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    MDIA:
+        acronym: MDIA
+        firstname:  Marie-Dominique
+        lastname: Iribarren
+        email: marie-dominique.iribarren@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    JH:
+        acronym: JH
+        firstname:  Julien
+        lastname: Hertout
+        email:  julien.hertout@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    NM:
+        acronym: NM
+        firstname:  Nicolas
+        lastname: Mingo
+        email:  nicolas.mingo@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    AC:
+        acronym: AC
+        firstname:  Aurélien
+        lastname: Caraty
+        email:  aurelien.caraty@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+
+    CG:
+        acronym: CG
+        firstname:  Clémentine
+        lastname: Gourp
+        email:  clementine.gourp@neomades.com
+        enabled: true
+        roles:
+          - contributeur
+          - chef_de_projet
+          - exploitant
+          - administrateur

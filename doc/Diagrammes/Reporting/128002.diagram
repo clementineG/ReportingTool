@@ -1,0 +1,124 @@
+format 75
+
+classcanvas 128002 class_ref 128002 // Contributeur
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz -0.29115 55.1066 2000
+end
+classcanvas 128130 class_ref 128130 // Chef_de_projet
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz -0.511349 261.579 2000
+end
+classcanvas 128258 class_ref 128258 // Exploitant
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz 0.869876 502.628 2000
+end
+classcanvas 128386 class_ref 128386 // Administrateur
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz -1.4264 689.788 2000
+end
+usecasecanvas 128514 usecase_ref 128002 // Déclarer son activité
+  color green
+  xyzwh 450.318 51.0523 3011 67 33 label_xy 434 94
+end
+usecasecanvas 128642 usecase_ref 128130 // Créer un projet/sous-projet
+  color green
+  xyzwh 505.82 199.574 3011 64 32 label_xy 472 232
+end
+usecasecanvas 128770 usecase_ref 128258 // Consulter son activité personnelle
+  color green
+  xyzwh 450.274 117.228 3011 64 32 label_xy 401 148
+end
+usecasecanvas 128898 usecase_ref 128386 // Créer un composant Neomades
+  color green
+  xyzwh 504.583 722.509 3011 64 32 label_xy 461 756
+end
+usecasecanvas 129026 usecase_ref 128514 // Créer un utilisateur
+  color green
+  xyzwh 512.38 655.346 3011 64 32 label_xy 499 687
+end
+usecasecanvas 129154 usecase_ref 128642 // Extraire un agrégat
+  color green
+  xyzwh 579.552 567.568 3011 64 32 label_xy 565 600
+end
+usecasecanvas 129282 usecase_ref 128770 // Corriger les données d'une déclaration
+  color green
+  xyzwh 583.315 509.381 3011 64 32 label_xy 522 542
+end
+usecasecanvas 129410 usecase_ref 128898 // Relancer automatiquement les contributeurs
+  color green
+  xyzwh 640.102 859.561 3011 64 32 label_xy 566 892
+end
+usecasecanvas 129538 usecase_ref 129026 // Gérer les paramètres du système
+  color green
+  xyzwh 425.244 780.722 3011 64 32 label_xy 376 813
+end
+usecasecanvas 129666 usecase_ref 129154 // Consulter l'activité d'un contributeur
+  color green
+  xyzwh 585.716 448.962 3011 64 32 label_xy 533 481
+end
+usecasecanvas 129794 usecase_ref 129282 // Envoyer un rapport mensuel à l'exploitant
+  color green
+  xyzwh 689.834 781.29 3011 64 32 label_xy 622 813
+end
+usecasecanvas 129922 usecase_ref 129410 // Se connecter
+  color green
+  xyzwh 295.908 344.699 3005 64 32 label_xy 296 377
+end
+usecasecanvas 130050 usecase_ref 129538 // Se déconnecter
+  color green
+  xyzwh 623.336 335.162 3011 64 32 label_xy 617 367
+end
+usecasecanvas 130178 usecase_ref 129666 // Changer de rôle
+  color green
+  xyzwh 450.715 343.088 3011 64 32 label_xy 445 375
+end
+usecasecanvas 130306 usecase_ref 129794 // Ajouter des paramètres de projet
+  color green
+  xyzwh 722.109 216.716 3011 64 32 label_xy 676 248
+end
+subject 135298 "Outil interne de reporting "
+  color verylightgray  xyzwh 241.306 7.92883 0 600 926
+simplerelationcanvas 130434 simplerelation_ref 128002
+  from ref 130306 z 3006 stereotype "<<extend>>" xyz 616 221.5 3000 to ref 128642
+end
+line 131074 ----
+  from ref 128002 z 3006 to ref 128514
+line 131202 ----
+  from ref 128002 z 3006 to ref 128770
+line 131714 ----
+  from ref 128130 z 3006 to ref 128642
+line 131842 ----
+  from ref 128386 z 3006 to ref 128898
+line 131970 ----
+  from ref 128258 z 3006 to ref 129154
+line 132098 ----
+  from ref 128386 z 3006 to ref 129026
+line 132226 ----
+  from ref 128258 z 3006 to ref 129282
+line 132354 ----
+  from ref 128386 z 3006 to ref 129538
+line 132482 ----
+  from ref 128258 z 3006 to ref 129666
+line 132738 ----
+  from ref 128130 z 3006 to ref 129922
+line 132866 ----
+  from ref 128002 z 3006 to ref 129922
+line 133378 ---- decenter_end 126
+  from ref 128258 z 3006 to ref 129922
+simplerelationcanvas 133762 simplerelation_ref 134658
+  from ref 130178 z 3006 stereotype "<<extend>>" xyz 375 357.5 3000 to ref 129922
+end
+line 133890 ----
+  from ref 130050 z 3006 to ref 128130
+line 134146 ----
+  from ref 130050 z 3006 to ref 128002
+line 134274 ----
+  from ref 130050 z 3006 to ref 128258
+line 134402 ----
+  from ref 130050 z 3006 to ref 128386
+line 135042 ----
+  from ref 129922 z 3006 to ref 128386
+simplerelationcanvas 135426 simplerelation_ref 134530
+  from ref 129922 z 3012 to ref 130178
+end
+end

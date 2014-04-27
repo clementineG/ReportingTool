@@ -1,0 +1,30 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+       {{ application_name }} - Listes des composants 
+{% endblock %}
+
+{% block body %} 
+
+    <h2>Listes des composants</h2>
+ 
+    <a href="{{ path('admin_component_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un composant"/></a>
+
+    <table id="ComponentTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+				<th>Nom</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for component in componentsList %}
+              <tr>
+              <td><a href="{{ path('admin_component_modify',{"id": component.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le composant"  style="width:40%;" /></a></td>
+              <td>{{ component.name }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+    
+{% endblock %}

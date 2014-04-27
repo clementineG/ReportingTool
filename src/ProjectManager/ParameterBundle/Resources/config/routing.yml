@@ -1,0 +1,27 @@
+project_manager_parameter:
+    pattern:  /
+    defaults: { _controller: ProjectManagerParameterBundle:Default:index }
+
+project_manager_parameter_add:
+    path:      /add
+    defaults:  { _controller: ProjectManagerParameterBundle:Default:add }
+    
+project_manager_parameter_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: ProjectManagerParameterBundle:Default:modify }
+
+project_manager_possiblevalues:
+    pattern:  /{parameter_id}/possiblevalues
+    defaults: { _controller: ProjectManagerParameterBundle:PossibleValue:index }
+
+project_manager_possiblevalue_add:
+    path:      /{parameter_id}/add_possiblevalue
+    defaults:  { _controller: ProjectManagerParameterBundle:PossibleValue:add }
+
+project_manager_possiblevalue_modify:
+    path:      /{parameter_id}/modify_possiblevalue/{id}
+    defaults:  { _controller: ProjectManagerParameterBundle:PossibleValue:modify }
+
+project_manager_possiblevalue_remove:
+    path:      /{parameter_id}/remove_possiblevalue/{id}
+    defaults:  { _controller: ProjectManagerParameterBundle:PossibleValue:remove }

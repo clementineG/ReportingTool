@@ -1,0 +1,16 @@
+model: Admin\ComponentBundle\Entity\Component
+fixtures:
+    API_2D:
+        name: API 2D
+        
+    Chaine_de_compil:
+        name: Chaine de compil
+
+    Wiki:
+        name: Wiki
+        
+    Intranet:
+        name: Intranet
+        
+    Site_web:
+        name: Site web

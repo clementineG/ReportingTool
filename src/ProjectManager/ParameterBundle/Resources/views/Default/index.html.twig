@@ -1,0 +1,32 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+       {{ application_name }} - Listes des paramètres 
+{% endblock %}
+
+{% block body %} 
+
+    <h2>Listes des paramètres</h2>
+ 
+    <a href="{{ path('project_manager_parameter_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un parametre"/></a>
+
+    <table id="ParameterTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+				<th>Nom</th>
+				<th>Type de paramètre</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for parameter in parametersList %}
+              <tr>
+              <td><a href="{{ path('project_manager_parameter_modify',{"id": parameter.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le paramètre"  style="width:40%;" /></a></td>
+              <td>{{ parameter.name }}</td>
+              <td>{{ parameter.type.name }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+    
+{% endblock %}

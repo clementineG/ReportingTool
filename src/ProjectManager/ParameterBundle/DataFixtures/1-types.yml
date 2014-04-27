@@ -1,0 +1,10 @@
+model: ProjectManager\ParameterBundle\Entity\Type
+fixtures:
+    boolean:
+        name: boolean
+        
+    string:
+        name: string
+
+    list:
+        name: list

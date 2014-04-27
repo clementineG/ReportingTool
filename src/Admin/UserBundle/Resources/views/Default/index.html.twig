@@ -1,0 +1,56 @@
+{% extends "::layout.html.twig" %}
+
+{% set description = 'Liste des utilisateurs' %}
+
+{% block title %}
+    {{ application_name }} - {{ description }}
+{% endblock %}
+
+{% block body %} 
+
+    <h2>{{ description }}</h2>
+ 
+    <a href="{{ path('admin_user_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un utilisateur"/></a>
+    
+    <table id="UserTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+			    <th> <!-- icone activer/desactiver --> </th>
+				<th>Acronyme</th>
+				<th>Nom </th>
+				<th>Prénom </th>
+				<th>Mail </th>
+				<th>Rôle(s)</th>
+				<th>Statut</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for user in usersList %}
+              <tr>
+              <td><a href="{{ path('admin_user_modify',{"id": user.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier l'utilisateur"  style="width:40%;" /></a></td>
+              <td><a href="{{ path('admin_user_changeStatus', {"id": user.id})}}">{% if user.enabled==true %} <img src="{{ asset('bundles/adminuser/images/disable.png') }}"  title="Désactiver l'utilisateur" style="width:40%;"/> {% else %}  <img src="{{ asset('bundles/adminuser/images/enable.png') }}"  title="Activer l'utilisateur" style="width:40%;"/></a> {% endif %}</td> 
+              <td>{{ user.acronym }}</td>
+              <td>{{ user.lastname }}</td>
+              <td>{{ user.firstname }}</td>
+              <td>{{ user.email }}</td>
+
+              {#
+                  Affichage des rôles :
+                  on commence par construire la liste des noms de rôles de l'utilisateur courant,
+                  puis on applique le filtre join() à cette liste, de façon à obtenir la liste des
+                  noms de rôles séparés par des virgules (et sans virgule à la fin)
+               #}
+              {% set roleNames = [] %}
+              {% for role in user.roles %}
+                  {% set roleNames = roleNames|merge([role.name]) %}
+              {% endfor %}
+              <td>{{ roleNames|join(', ') }}</td>
+
+              <td>{% if user.enabled==true %} Actif {% else %}  Inactif {% endif %} </td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+
+{% endblock %}

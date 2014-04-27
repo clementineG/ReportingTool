@@ -1,0 +1,12 @@
+window_sizes 1202 857 222 974 682 82
+diagrams
+  active  usecasediagram_ref 128002 // CU v1
+    1093 812 99 4 0 0
+end
+show_stereotypes
+selected 
+package_ref 129 // Reporting
+open
+  usecaseview_ref 128258 // CU
+end
+end

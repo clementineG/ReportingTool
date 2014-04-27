@@ -1,0 +1,11 @@
+model: Admin\RoleBundle\Entity\Role
+fixtures:
+    contributeur:
+        name: Contributeur
+    chef_de_projet:
+        name: Chef de projet
+    exploitant:
+        name: Exploitant
+    administrateur:
+        name: Administrateur
+        

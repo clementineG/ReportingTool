@@ -1,0 +1,14 @@
+model: Admin\CustomerBundle\Entity\Customer
+fixtures:
+    L_Oreal:
+        name: L'Oréal
+        
+    64Telecom:
+        name: 64Telecom
+
+    TagAttitude:
+        name: TagAttitude
+        
+    Viadeo:
+        name: Viadeo
+

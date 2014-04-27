@@ -1,0 +1,7 @@
+parameters:
+#    project_manager_parameter.example.class: ProjectManager\ParameterBundle\Example
+
+services:
+#    project_manager_parameter.example:
+#        class: %project_manager_parameter.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,11 @@
+project_manager_project:
+    pattern:  /
+    defaults: { _controller: ProjectManagerProjectBundle:Default:index }
+
+project_manager_project_add:
+    path:      /add
+    defaults:  { _controller: ProjectManagerProjectBundle:Default:add}
+    
+project_manager_project_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: ProjectManagerProjectBundle:Default:modify}

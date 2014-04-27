@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Document xmlns="http://www.evolus.vn/Namespace/Pencil"><Properties/><Pages><Page><Properties><Property name="name">Untitled Page</Property><Property name="id">1365667021720_7740</Property><Property name="width">1024</Property><Property name="height">768</Property><Property name="dimBackground"/><Property name="transparentBackground">false</Property><Property name="backgroundColor">#FFFFFFFF</Property></Properties><Content><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="de1e1bdecbd642b0b03e0058e18e4625" transform="matrix(1,0,0,1,37.75,37.75)"><p:metadata><p:property name="box"><![CDATA[262.5,95]]></p:property><p:property name="imageData"><![CDATA[2107,757,images/logo_neomades.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="4161e752148b43db83080d803093fe67">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="bdca9527f2f8410da9938f6738440282">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="ef29c34bf5de437fa0720f33c541f728" width="262.5" height="95" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="33379a5acad94250a9326820109a87df" transform="scale(0.12458471760797342,0.12549537648612946)">
+                        <image x="0" y="0" p:name="image" id="5b9ccda060684a25a78ed30c3f46e46a" xlink:href="images/logo_neomades.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2107" height="757"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#bdca9527f2f8410da9938f6738440282" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#4161e752148b43db83080d803093fe67)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="a7ba3236910e42aeaad1f72f5c08a197"/>
+            <use xlink:href="#bdca9527f2f8410da9938f6738440282" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.BasicWebElements:heading" p:sc="Heading 1" id="d88c853ca69c47718ea646e007ef4d4a" transform="matrix(1,0,0,1,167.5,120)"><p:metadata><p:property name="textContent"><![CDATA[Outil interne de reporting <br />]]></p:property><p:property name="textFont"><![CDATA["Liberation Sans",Arial,sans-serif|bold|normal|24px|none]]></p:property><p:property name="textColor"><![CDATA[#000000FF]]></p:property><p:property name="customStyle"><![CDATA[]]></p:property></p:metadata>
+
+            <foreignObject x="0" y="0" width="290" height="30" p:name="htmlObject" id="4b5f4c8bdb074c448e2f4e16f89a0fe3" style="color: rgb(0, 0, 0); opacity: 1; font-family: &quot;Liberation Sans&quot;,Arial,sans-serif; font-size: 24px; font-weight: bold; font-style: normal; text-decoration: none;">
+                <div xmlns="http://www.w3.org/1999/xhtml" p:name="textDiv" id="e89661f9b9c6431d9dce7475bbbd1385" style="white-space: nowrap; display: inline-block !important"><div xmlns="http://www.w3.org/1999/xhtml">Outil interne de reporting <br /></div></div>
+            </foreignObject>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.BasicWebElements:heading" p:sc="Heading 5" id="ee9a3e5f817740128718b7ddd097ff6a" transform="matrix(1,0,0,1,889.25,94.5)"><p:metadata><p:property name="textContent"><![CDATA[nom<br />prénom<br /><br />]]></p:property><p:property name="textFont"><![CDATA["Liberation Sans",Arial,sans-serif|bold|normal|12px|none]]></p:property><p:property name="textColor"><![CDATA[#000000FF]]></p:property><p:property name="customStyle"><![CDATA[]]></p:property></p:metadata>
+
+            <foreignObject x="0" y="0" width="44" height="45" p:name="htmlObject" id="6271be693eeb4dc4a29ab780273de3f1" style="color: rgb(0, 0, 0); opacity: 1; font-family: &quot;Liberation Sans&quot;,Arial,sans-serif; font-size: 12px; font-weight: bold; font-style: normal; text-decoration: none;">
+                <div xmlns="http://www.w3.org/1999/xhtml" p:name="textDiv" id="228fecdbb2a24d27ab3a048c449c961f" style="white-space: nowrap; display: inline-block !important"><div xmlns="http://www.w3.org/1999/xhtml">nom<br />prénom<br /><br /></div></div>
+            </foreignObject>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="01199843b0d04e71add56996bae1a4dc" transform="matrix(1,0,0,1,849,97)"><p:metadata><p:property name="box"><![CDATA[26.25,26.25]]></p:property><p:property name="imageData"><![CDATA[64,64,images/icones/util.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+            <defs>
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="57ae9aa6ed064b3cbc8a3f82be3e3930">
+                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
+                </filter>
+                <g p:name="container" id="60dade1653684cdebc22353b51c33fe9">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="98ffd65c818b40f7b56d5d041a28d98d" width="26.25" height="26.25" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="daa326d9158141ed802f103803fe27ac" transform="scale(0.41015625,0.41015625)">
+                        <image x="0" y="0" p:name="image" id="1424f53cb4f04c4b99c8d91763c3db70" xlink:href="images/icones/util.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64"/>
+                    </g>
+                </g>
+            </defs>
+            <use xlink:href="#60dade1653684cdebc22353b51c33fe9" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#57ae9aa6ed064b3cbc8a3f82be3e3930)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="bdd421ef969f408caed45c15a4d457da"/>
+            <use xlink:href="#60dade1653684cdebc22353b51c33fe9" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+        </g></Content></Page></Pages></Document>

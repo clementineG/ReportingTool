@@ -1,0 +1,11 @@
+admin_customer:
+    pattern:  /
+    defaults: { _controller: AdminCustomerBundle:Default:index }
+
+admin_customer_add:
+    path:      /add
+    defaults:  { _controller: AdminCustomerBundle:Default:add }
+
+admin_customer_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: AdminCustomerBundle:Default:modify}

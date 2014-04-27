@@ -1,0 +1,7 @@
+parameters:
+#    admin_component.example.class: Admin\ComponentBundle\Example
+
+services:
+#    admin_component.example:
+#        class: %admin_component.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

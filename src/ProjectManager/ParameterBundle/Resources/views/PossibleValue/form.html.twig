@@ -1,0 +1,22 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    {{ application_name }} - {{ description }}
+{% endblock %}
+ 
+{% block body %}
+ 
+  <h2>{{ description }}</h2>
+
+  <div class="well">
+  <form method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" class="btn btn-primary" />
+  </form>
+</div>
+
+  <p>
+    <a href="{{ path(index_route,{"parameter_id": parameter.id}) }}" class="btn">Retour</a>
+  </p>
+ 
+{% endblock %}

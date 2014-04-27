@@ -1,0 +1,30 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    {{ application_name }} - Liste des rôles 
+{% endblock %}
+
+{% block body %} 
+
+    <h2>Liste des rôles</h2>
+
+    <a href="{{ path('admin_role_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un rôle"/></a>
+
+    <table id="RoleTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+				<th>Nom</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for role in rolesList %}
+              <tr>
+              <td><a href="{{ path('admin_role_modify',{"id": role.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le rôle"  style="width:40%;" /></a></td>
+              <td>{{ role.name }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+
+{% endblock %}

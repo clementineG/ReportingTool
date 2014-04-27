@@ -1,0 +1,30 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+       {{ application_name }} - Listes des projets 
+{% endblock %}
+
+{% block body %} 
+
+    <h2>Listes des projets</h2>
+ 
+    <a href="{{ path('project_manager_project_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un projet"/></a>
+
+    <table id="ProjectTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+				<th>Intitulé</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for project in projectsList %}
+              <tr>
+              <td><a href="{{ path('project_manager_project_modify',{"id": project.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le projet"  style="width:40%;" /></a></td>
+              <td>{{ project.name }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+    
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    {{ application_name }} - Listes des clients 
+{% endblock %}
+
+{% block body %} 
+
+    <h2>Listes des clients</h2>
+ 
+    <a href="{{ path('admin_customer_add') }}" style="text-decoration: none;" ><input type="button" value="Ajouter un client"/></a>
+
+    <table id="CustomerTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+			    <th> <!-- icone modifier --> </th>
+				<th>Nom</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for customer in customersList %}
+              <tr>
+              <td><a href="{{ path('admin_customer_modify',{"id": customer.id}) }}" ><img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le client"  style="width:40%;" /></a></td>
+              <td>{{ customer.name }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+{% endblock %}
+

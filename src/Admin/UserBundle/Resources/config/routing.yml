@@ -1,0 +1,16 @@
+admin_user:
+    pattern:  /
+    defaults: { _controller: AdminUserBundle:Default:index }
+     
+admin_user_add:
+    path:      /add
+    defaults:  { _controller: AdminUserBundle:Default:add }
+
+admin_user_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: AdminUserBundle:Default:modify}
+    
+admin_user_changeStatus:
+    path:      /changeStatus/{id}
+    defaults:  { _controller: AdminUserBundle:Default:changeStatus}
+

@@ -1,0 +1,18 @@
+model: ProjectManager\ParameterBundle\Entity\Parameter
+fixtures:
+    RD:
+        name: Recherche et développement
+        type: boolean
+        
+    Chargeable:
+        name: Facturable
+        type: boolean
+
+    Customer:
+        name: Client
+        type: list
+        
+    Neomades_Component:
+        name: Composant Neomades
+        type: list
+

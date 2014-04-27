@@ -1,0 +1,12 @@
+model: ProjectManager\ProjectBundle\Entity\Project
+fixtures:
+    API_Generique:
+        name: API Générique
+        
+    Neomad_Manager:
+        name: NeoMAD Manager
+        
+    Reporting_Tool:
+        name: Outil de reporting
+
+

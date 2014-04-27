@@ -1,0 +1,45 @@
+{% extends "::layout.html.twig" %}
+
+{% set description = "Liste des valeurs possibles pour le paramètre #{parameter.name}" %}
+
+{% block title %}
+    {{ application_name }} - {{ description }}
+{% endblock %}
+
+{% block body %} 
+
+    <h2>{{ description }}</h2>
+
+    
+    <a href="{{ path('project_manager_possiblevalue_add',{"parameter_id":parameter.id}) }}" style="text-decoration: none;" >
+        <input type="button" value="Ajouter un parametre"/>
+    </a>
+    
+    <table id="PossibleValueTab" style="border: solid black 1px;">
+		<thead>
+			<tr>
+{#  			<th> <!-- img modification --> </th>
+			<th> <!-- img suppression --> </th>
+#}			<th>Valeurs possibles</th>
+			</tr>
+		</thead>    
+		<tbody>
+          {% for possibleValue in possibleValueList %}
+              <tr>
+              <td>
+{#                  <a href="{{ path('project_manager_possiblevalue_modify',{"id": parameter.id}) }}" >
+                      <img src="{{ asset('bundles/adminuser/images/modify.png') }}" title="Modifier le paramètre"  style="width:40%;" />
+                  </a>
+              </td>
+              <td>
+                  <a href="{{ path('project_manager_possiblevalue_remove',{"id": parameter.id}) }}" >
+                      <img src="{{ asset('bundles/projectmanagerparameter/images/remove.png') }}" title="Modifier le paramètre"  style="width:40%;" />
+                  </a>
+              </td>
+#}              <td>{{ possibleValue.value }}</td>
+              </tr>
+          {% endfor %}
+		</tbody>
+    </table>
+    
+{% endblock %}

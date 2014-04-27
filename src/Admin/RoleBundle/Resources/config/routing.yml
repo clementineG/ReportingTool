@@ -1,0 +1,11 @@
+admin_role:
+    pattern:  /
+    defaults: { _controller: AdminRoleBundle:Default:index }
+
+admin_role_add:
+    path:      /add
+    defaults:  { _controller: AdminRoleBundle:Default:add}
+    
+admin_role_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: AdminRoleBundle:Default:modify}

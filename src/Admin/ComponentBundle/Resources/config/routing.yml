@@ -1,0 +1,11 @@
+admin_component:
+    pattern:  /
+    defaults: { _controller: AdminComponentBundle:Default:index }
+    
+admin_component_add:
+    path:      /add
+    defaults:  { _controller: AdminComponentBundle:Default:add }
+
+admin_component_modify:
+    path:      /modify/{id}
+    defaults:  { _controller: AdminComponentBundle:Default:modify}
